@@ -1,5 +1,5 @@
 # Object of this program is to create plots using the base plot
-# Create a Histogram of the distribution of Global Active Power and Frequency
+# Creating Plot3 of the assignment
 
 # Step 1 - Check if Coursera directory exists
 
