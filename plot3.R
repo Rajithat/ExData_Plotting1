@@ -1,5 +1,9 @@
 # Object of this program is to create plots using the base plot
-# Create a Histogram of the distribution of Global Active Power and Frequency
+<<<<<<< HEAD
+# Create a plot 3
+=======
+# Creating Plot3 of the assignment
+>>>>>>> 34ff032badec6906eca35e2988ef4eedb8ce8f90
 
 # Step 1 - Check if Coursera directory exists
 
@@ -33,7 +37,7 @@ l1_t = data.table(dat)
 l1_t[,datetime_2:=as.POSIXct(strptime(paste(l1_t[,Date],l1_t[,Time]),format='%d/%m/%Y %H:%M:%S'))]
 
 
-plot(l1_t[,datetime_2],l1_t[,Sub_metering_1],lty=1,type="l", col="black", main="",xlab="",ylab="Energy sub metering")
+plot(l1_t[,datetime_2],l1_t[,Sub_metering_1],lty=1,type="l", col="black", main="",xlab="",ylab="Energy sub metering", cex=1.2)
 
 lines(l1_t[,datetime_2],l1_t[,Sub_metering_2],lty=1,type="l", col="red")
 
@@ -41,7 +45,7 @@ lines(l1_t[,datetime_2],l1_t[,Sub_metering_3],lty=1,type="l", col="blue")
 
 legend( "topright",c("Sub_metering_1","Sub_metering_2","Sub_metering_3"),  col=c("black", "red","blue"),lty=c(1,1,1), cex=1)
 
-dev.copy(png,'plot3.png',width=500,height=500)
+dev.copy(png,'plot3.png',width=480,height=480)
 dev.off()
 
 

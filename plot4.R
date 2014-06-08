@@ -1,5 +1,9 @@
 # Object of this program is to create plots using the base plot
-# Create a Histogram of the distribution of Global Active Power and Frequency
+<<<<<<< HEAD
+# Create a plot 4
+=======
+# Creating Plot 4 of the assignment
+>>>>>>> 34ff032badec6906eca35e2988ef4eedb8ce8f90
 
 # Step 1 - Check if Coursera directory exists
 
@@ -47,9 +51,9 @@ lines(l1_t[,datetime_2],l1_t[,Sub_metering_3],lty=1,type="l", col="blue")
 legend( "topright",c("Sub_metering_1","Sub_metering_2","Sub_metering_3"),  col=c("black", "red","blue"),lty=c(1,1,1), cex=0.5)
 
 
-plot(l1_t[,datetime_2],l1_t[,Global_reactive_power],lty=1,type="l", main="", xlab="datetime", ylab="Global_reactive_power")
+plot(l1_t[,datetime_2],l1_t[,Global_reactive_power],lty=1,type="l", main="", xlab="datetime", ylab="Global_reactive_power", cex=1.2)
 
-dev.copy(png,'plot4.png',width=600,height=600)
+dev.copy(png,'plot4.png',width=480,height=480)
 dev.off()
 
 
